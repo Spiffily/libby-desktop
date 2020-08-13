@@ -18,10 +18,10 @@ A simple Electron app to come as close as possible to providing a Linux desktop 
 This app is equipped with all the wonderful features of an electron app, including Dark theme (from Gtk light/dark), media playback, and Dev Tools (`Ctl+Shift+I`). Please enjoy.
 
 ## Development
-1. Clone the repository. `git clone https://github.com/Spiffily/libby-desktop`
+1. Clone the repository. `git clone https://github.com/Spiffily/libby-desktop && cd libby-desktop`
 2. Install npm. `sudo apt-get install -y npm` on Ubuntu based OSes
 3. Install latest electron. `npm install --save-dev electron`
-4. Run the app. `cd libby-desktop && npm start`
+4. Run the app. `npm start`
 
 ## Credits
 The Libby icon was taken from this page for use as the app icon: https://www.overdrive.com/apps/libby/
