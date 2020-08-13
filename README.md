@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/discord/735879930348306554?color=631A35&logo=discord&logoColor=white" alt="Chat on Discord" />
 </a>
 <a href="https://github.com/Spiffily/coronado-app/releases">
-<img  alt="Release" src="https://img.shields.io/badge/release-0.0.0-A61C49" />
+<img  alt="Release" src="https://img.shields.io/badge/release-1.0.0-A61C49" />
 </a>
 <a href="https://snapcraft.io/coronado-app">
 <img src="https://img.shields.io/badge/snap-0.0.0-29CFC3?logo=snapcraft&logoColor=white" alt="Snap Store" />
