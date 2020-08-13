@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "license": "GPL-3.0-or-later",
   "description": "A simple Electron app to come as close as possible to providing a Linux desktop app for Libby.",
-  "author": "Spiffily Software",
+  "author": "Spiffily Software <sillynoodle36@gmail.com> (https://spiffily.github.io)",
   "main": "index.js",
   "scripts": {
     "postinstall": "install-app-deps",
     "start": "npm install && electron .",
     "test": "electron .",
-    "pack": "build --dir",
-    "dist": "build"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,12 @@
   },
   "homepage": "https://github.com/Spiffily/libby-desktop#readme",
   "build": {
-    "appId": "libby-desktop",
-    "category": "productivity",
+    "appId": "io.github.spiffily.libby",
+    "productName": "Libby Desktop",
+    "copyright": "Copyright 2020 ${author}",
+    "directories": {
+      "buildResources": "."
+    },
     "dmg": {
       "contents": [
         {
@@ -41,18 +45,21 @@
       ]
     },
     "linux": {
+      "category": "Office",
+      "synopsis": "The (unofficial) Libby desktop app for Linux.",
+      "icon": "./assets/libby-mascot.svg",
+      "executableName": "libby-desktop",
       "target": [
-        "AppImage",
-        "deb"
+        "AppImage"
       ]
     },
     "win": {
       "target": "NSIS",
-      "icon": "./libby-mascot.svg"
+      "icon": "./assets/libby-mascot.svg"
     }
   },
   "devDependencies": {
     "electron": "latest",
-    "electron-builder": "^22.8.0"
+    "electron-builder": "latest"
   }
 }
